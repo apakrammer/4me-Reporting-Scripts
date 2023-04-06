@@ -4,7 +4,7 @@ DROP table #tmp;
 
 -- Specific Users
 -- Use these two statements to search for arbitrary users
-CREATE table #tmp (email varchar(254));
+CREATE table #tmp (email varchar(254) COLLATE DATABASE_DEFAULT);
 INSERT into #tmp values ('howard.tanner@widget.com');
 
 -- All Disabled Users
